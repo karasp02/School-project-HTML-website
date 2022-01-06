@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="hovedside.css">
+</head>
+<body>
+    <!-- Lydfil med Harry Potter bakgrunnsmusikk-->
+    <audio id="audio" controls autoplay >
+        <source src="Audio/theme-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Bilde med instruksjoner til brukeren-->
+    <img id="info-message" src="images/snakkeboble.png" alt="Snakkeboble med instrukser">
+
+    <!-- Bilde som er en link til hovedsiden-->
+    <a href=introside.html>
+        <img id="title-image" src="images/harry-potter-logo-silver.png" alt="Harry Potter logo">
+    </a> 
+    
+    <!-- Bilde av fugl-->
+    <img id="bird-image" src="images/bird.png" alt="Bird image">
+
+    <div class="character-container">
+
+        <!--Harry Potter-->
+        <img id="harry-potter" src="images/harry-potter.png" alt="Harry Potter image">
+        <div id="harry-potter-message">
+            <p> Harry har arvet sin fars utseende og sin mors øyne. 
+                Han er berømt i magikerverdenen på grunn av sitt sammenstøt
+                med den onde Fyrst Voldemort da han var bare ett år gammel. 
+            </p> <!--Kilde:https://no.wikipedia.org/wiki/Harry_Potter_(figur)#Biografi-->
+        </div>
+
+        <!--Hermine Grang-->
+        <img id="hermine-grang" src="images/hermine-grang.png" alt="Hermine Grang image">
+        <div id="hermine-grang-message">
+            <p> Hun er en av Harrys to bestevenner, sammen med Ronny Wiltersen. 
+                Hun er interessert i alle skolefagene ved Galtvort, unntatt clairvoyance, som hun synes er bare tull. 
+                Hun er ganske sjefete, særlig i de første bøkene, og veldig skoleflink.
+            </p> <!--Kilde:https://no.wikipedia.org/wiki/Hermine_Grang-->
+        </div>
+
+        <!--Voldemort-->
+        <img id="voldemort" src="images/voldemort.png" alt="Voldemort image">
+        <div id="voldemort-message">
+            <p> Han er en ond trollmann som vil sikre seg uforliknelig makt
+                og oppnå udødelighet gjennom utførelsen av mørk magi. 
+                Han er fryktet av det magiske samfunnet. 
+            </p> <!--Kilde: https://no.wikipedia.org/wiki/Voldemort-->
+        </div>
+
+    </div>
+
+</body>
+</html>

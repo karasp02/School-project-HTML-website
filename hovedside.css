@@ -1,0 +1,168 @@
+/* Bakgrunnsbilde i body */
+body {
+    background-image: url("images/inside-castle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Lydfil for bakgrunnsmusikk */
+#audio {
+    position:absolute;
+}
+
+/* Bilde med instruksjoner */
+#info-message {
+    display: block;
+    top:8vw;
+    position: absolute;
+    width: 20%;
+}
+
+/* "Tittel bilde" øverst på nettsiden, som har link til introsiden */
+#title-image {
+    display: block;
+    left: 40%;
+    top:1vw;
+    position: absolute;
+    width: 20%;
+}
+
+/* Bilde av en fugl, som roterer */
+#bird-image {
+    display: block;
+    right: 10%;
+    top:5vw;
+    position: absolute;
+    width: 20%;
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform:rotate(359deg);
+    }
+}
+
+/* Container til karakterene */
+.character-container {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* Harry Potter */
+
+#harry-potter {
+    position: absolute;
+    display: block;
+    left: 45%;
+    top: 20vw;
+    width: 10%;
+    height: auto;
+}
+
+#harry-potter-message {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(255,255,255,0);
+    color: rgba(0,0,0,0);
+    font-family: sans-serif;
+    width: 200px;
+    text-align: center;
+    pointer-events: none; /*Gjør at boksen ikke blinker*/
+    left: 35%;
+    top:10vw;
+    border-radius: 1vh;
+
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#harry-potter:hover ~ #harry-potter-message {
+    visibility: visible;
+    background-color: rgba(255,255,255,0.8);
+    color: rgba(0,0,0,1);
+}
+
+#harry-potter:hover {
+    transform: scaleX(-1);
+}
+
+/* Hermine Grang */
+
+#hermine-grang {
+    position: absolute;
+    display: block;
+    left:30%;
+    top:24vw;
+    width: 10%;
+    height: auto;
+}
+
+#hermine-grang-message {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(255,255,255,0);
+    color: rgba(0,0,0,0);
+    font-family: sans-serif;
+    width: 100px;
+    text-align: center;
+    pointer-events: none; /*Gjør at boksen ikke blinker*/
+    left: 25%;
+    top:10vw;
+    border-radius: 1vh;
+
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#hermine-grang:hover ~ #hermine-grang-message {
+    visibility: visible;
+    background-color: rgba(255,255,255,0.8);
+    color: rgba(0,0,0,1);
+}
+
+#hermine-grang:hover {
+    transform: scaleX(-1);
+}
+
+/* Voldemort */
+
+#voldemort {
+    position: absolute;
+    display: block;  
+    left:54%;
+    top:25vw;
+    width: 15%;
+    height: auto;
+}
+
+#voldemort-message {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(255,255,255,0);
+    color: rgba(0,0,0,0);
+    font-family: sans-serif;
+    width: 100px;
+    text-align: center;
+    pointer-events: none; /*Gjør at boksen ikke blinker*/
+    left: 70%;
+    top:10vw;
+    border-radius: 1vh;
+
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#voldemort:hover ~ #voldemort-message {
+    visibility: visible;
+    background-color: rgba(255,255,255,0.8);
+    color: rgba(0,0,0,1);
+}
+
+#voldemort:hover {
+    transform: scaleX(-1);
+}

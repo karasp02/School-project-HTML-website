@@ -1,0 +1,68 @@
+.images-container { /*Dekker alle tags, gir de position: relative*/
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+body { /*Gjør images/castle til bakgrunnsbilde for hele siden*/
+    background-image: url("images/castle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+
+}
+@keyframes flashLogo{ /*Animasjon som slider harry-potter-logo mot høyre*/
+    from {
+        transform: translateX(20%);
+    }
+    to {
+        transform: translateX(40%);
+    }
+}
+#title-image { /*ID til harry-potter-logo. Bruker animasjonen flashLogo*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
+    width: 250px;
+    animation-name: flashLogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotateHarry { /*Animasjon som roterer harry-potter-flying 360grader*/
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.click-image { /*Klasse for bilde som linker til hovedsiden*/
+    position: fixed;
+    width: 1000px;
+    display: block;
+    margin-left:70%;
+    margin-right: 25%;
+}
+
+#flying-harry { /*ID til harry-potter-flying*/
+    width: 20%;
+}
+#flying-harry:hover { /*Animasjon rotateHarry ved hover over harry-potter-flying*/
+    animation-name: rotateHarry;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+h1 { /*Tekstboks*/
+    font-size: 25px;
+    font-family: sans-serif;
+    border: 10px solid orange;
+    background-color: maroon;
+    color: goldenrod;
+    padding: 5px;
+    display: flex;
+    justify-content: center; 
+    margin-top: 400px;
+}
