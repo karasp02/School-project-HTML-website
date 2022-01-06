@@ -1,7 +1,9 @@
 Gruppemedlemmer.docx
 kodestandarer.docx
 Plan.docx
+
 safe.code-workspace
+settings.json
 
 .vscode/*
 !.vscode/settings.json
